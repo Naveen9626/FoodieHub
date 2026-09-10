@@ -1769,3 +1769,66 @@ main button {
   border-radius: 8px;
   text-decoration: none;
 }
+/* =========================
+   CONTACT MOBILE FIX
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+.contact-section {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.contact-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.contact-form {
+  width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+
+  .contact-section {
+    padding: 50px 20px;
+  }
+
+  .contact-heading h1 {
+    font-size: 32px;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 25px;
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .contact-card {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    min-width: 0;
+  }
+}
